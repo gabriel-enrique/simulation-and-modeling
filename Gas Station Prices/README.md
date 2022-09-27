@@ -84,3 +84,49 @@ To run the simulation, you only need to run the `gas_station_sim.py` file.
 The results will show you the simulation results table, total sales for both gas stations, and the distribution of vehicles.
 
 You can change the fuel prices to see how the change of fuel prices affects both gas stations in terms of gross revenue.
+
+## Results, Analysis, and Discussion
+
+Here are some of the simulation results:
+
+ - Normal prices
+ ```
+ Total Pertamina Sales    :        1,272,121,100
+ Total Shell Sales        :          911,486,170
+ ```
+
+ - Shell drops `RON 90` prices
+ ```
+ Total Pertamina Sales    :        1,098,466,100
+ Total Shell Sales        :          990,102,590
+ ```
+
+ - Shell drops `RON 90` and `CN 51` prices
+ ```
+ Total Pertamina Sales    :        1,032,937,900
+ Total Shell Sales        :        1,072,629,220
+ ```
+
+ - Shell drops all prices
+ ```
+ Total Pertamina Sales    :        1,062,487,900
+ Total Shell Sales        :        1,048,995,930
+ ```
+
+ - Pertamina and Shell drops `RON 90` and `CN 51` prices
+ ```
+ Total Pertamina Sales    :        1,013,362,600
+ Total Shell Sales        :        1,020,096,400
+ ```
+
+ - Shel drops `RON 92`, `RON 98`, `CN 48`, and `CN 53` prices
+ ```
+ Total Pertamina Sales    :        1,143,909,200
+ Total Shell Sales        :          959,722,460
+ ```
+
+When we see the distributions table, we can see that the most common fuel types are `RON 90` and `CN 51`. Droping either or both prices will surely affect a large pecentage of gross revenue.
+
+However, if we drop the less-popular fuel types, the changes in the difference of gross revenue is not signifficant.
+
+Hence, if one of the gas stations drops the price(s) of the popular fuel types, the competitor might want to consider droping their prices as well in order to maintain that gross revenue as high as possible.
