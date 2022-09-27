@@ -20,10 +20,10 @@ def choose(pertamina_price, shell_price):
 def vehicle():
     '''
     Motorcycle  : 50%
-    Cars        : 40%
-    Trucks      : 10%
+    Car        : 40%
+    Truck      : 10%
     '''
-    vehicle_type = ["Motorcycle", "Cars", "Trucks"]
+    vehicle_type = ["Motorcycle", "Car", "Truck"]
     prob = [0.5, 0.4, 0.1]
 
     return choices(vehicle_type, prob)[0]
@@ -33,10 +33,10 @@ def fuel_rating(vehicle):
     if vehicle == "Motorcycle":
         ratings = ["RON 90"]
         prob = [1]
-    elif vehicle == "Cars":
+    elif vehicle == "Car":
         ratings = ["RON 90", "RON 92", "RON 98", "CN 51", "CN 53"]
         prob = [0.4, 0.3, 0.1, 0.05, 0.15]
-    elif vehicle == "Trucks":
+    elif vehicle == "Truck":
         ratings = ["CN 48", "CN 51", "CN 53"]
         prob = [0.2, 0.7, 0.1]
     
@@ -46,9 +46,9 @@ def fuel_rating(vehicle):
 def liters(vehicle):
     if vehicle == "Motorcycle":
         num = randint(1, 4)
-    elif vehicle == "Cars":
+    elif vehicle == "Car":
         num = randint(1, 45)
-    elif vehicle == "Trucks":
+    elif vehicle == "Truck":
         num = randint(1, 100)
 
     return num
