@@ -19,7 +19,7 @@ def choose(pertamina_price, shell_price):
 
 def vehicle():
     '''
-    Motorcycle  : 50%
+    Motorcycle : 50%
     Car        : 40%
     Truck      : 10%
     '''
