@@ -2,9 +2,9 @@
 
 ## Problem Description
 
-A common occurrence in retailing is competition between rival establishments over which shop can claim most of the market/customers. The most straightforward price war situation occur in supermarkets (like Indomaret, Alphamart, etc.) or in gas-stations (like Pertamina, Shell, BP, etc.)
+A common occurrence in retailing is competition between rival establishments over which shop can claim most of the market/customers. The most straightforward price war situation occurs in supermarkets (like Indomaret, Alfamart, etc.) or in gas-stations (like Pertamina, Shell, BP, etc.)
 
-Two gas stations operate from adjacent main road sites and vie with one another for business. Competition is also stiff from other gas stations not far away and profit margins from the sale of gasoline/petrol are very sensitive to suddent changes in demand.
+Two gas stations operate from adjacent main road sites and vie with one another for business. Competition is also stiff from other gas stations not far away and profit margins from the sale of gasoline/petrol are very sensitive to sudden changes in demand.
 
 On the other hand, the market is very large, and although both gas stations have regular customers, they realise that many of their sales are to ‘casual’ drivers.
 
@@ -31,7 +31,7 @@ There are 6 types of fuel. Each type is based on the [Octane Rating](https://en.
 1. CN 51
 1. CN 53
 
-The probability distribution of fuel choice depends on the vehicle type. Again, we aporximate these distributions based on our observations.
+The probability distribution of fuel choice depends on the vehicle type. Again, we approximate these distributions based on our observations.
 
 | Vehicle    | Fuel Choice | Distribution |
 |------------|-------------|--------------|
@@ -45,7 +45,7 @@ The probability distribution of fuel choice depends on the vehicle type. Again, 
 | Truck      | CN 51       | 70%          |
 | Truck      | CN 53       | 10%          |
 
-The ranges of liters purchased also depends on the vehicle type. Here we use a uniform distribution. We did a research on the fuel tank capacity of each vehicle type to determine the maximum liters purhcased cap.
+The ranges of litres purchased also depends on the vehicle type. Here we use a uniform distribution. We did research on the fuel tank capacity of each vehicle type to determine the maximum litres purchased cap.
 
 | Vehicle    | Minimum Liters | Maximum Liters |
 |------------|----------------|----------------|
@@ -57,7 +57,7 @@ We choose [Pertamina](https://en.wikipedia.org/wiki/Pertamina) and [Shell](https
 
 > Some of Shell's fuel type are not available anymore in Indonesia, hence we don't know the actual price. For those types of fuel, we use approximation.
 
-For a customer (vehicle) to choose which gas station to go to, the gasoline/diesel price of their choice will be the determining factor. So say that a `Car` wants to buy `RON 92` fuel, then only the prices of `RON 92` fuel from Pertamina and Shell will be the determining factor.
+For a customer (vehicle) to choose which gas station to go to, the gasoline/diesel price of their choice will be the determining factor. So, say that a `Car` wants to buy `RON 92` fuel, then only the prices of `RON 92` fuel from Pertamina and Shell will be the determining factor.
 
 ```py
 def choose(pertamina_price, shell_price):
@@ -73,7 +73,7 @@ def choose(pertamina_price, shell_price):
         return "Shell"
 ```
 
-Normally, if the fuel prices are the same, then they will both have a uniform distribution. However, if one of the prices is lower than the other, then the probability will favor the cheaper-fuel gas station more.
+Normally, if the fuel prices are the same, then they will both have a uniform distribution. However, if one of the prices is lower than the other, then the probability will favour the cheaper-fuel gas station more.
 
 ## Running the Simulation
 
@@ -125,8 +125,8 @@ Here are some of the simulation results:
  Total Shell Sales        :          959,722,460
  ```
 
-When we see the distributions table, we can see that the most common fuel types are `RON 90` and `CN 51`. Droping either or both prices will surely affect a large pecentage of gross revenue.
+When we see the distributions table, we can see that the most common fuel types are `RON 90` and `CN 51`. Dropping either or both prices will surely affect a large percentage of gross revenue.
 
-However, if we drop the less-popular fuel types, the changes in the difference of gross revenue is not signifficant.
+However, if we drop the less-popular fuel types, the changes in the difference of gross revenue are not significant.
 
-Hence, if one of the gas stations drops the price(s) of the popular fuel types, the competitor might want to consider droping their prices as well in order to maintain that gross revenue as high as possible.
+Hence, if one of the gas stations drops the price(s) of the popular fuel types, the competitor might want to consider dropping their prices as well in order to maintain that gross revenue as high as possible.

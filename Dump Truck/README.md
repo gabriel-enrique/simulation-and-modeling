@@ -2,7 +2,7 @@
 
 ## Problem Description
 
-A dump truck pipeline system which consists of truck(s), loader(s) and scaler(s) needs to be analyzed. A truck will arrive to the system at the loader queue. After the truck is done being loaded, the truck will enter the scaler queue. After done being scaled, the truck will exit the system and travel back to the start of the system, i.e. the loader queue.
+A dump truck pipeline system which consists of truck(s), loader(s) and scaler(s) needs to be analysed. A truck will arrive to the system at the loader queue. After the truck is done being loaded, the truck will enter the scaler queue. After done being scaled, the truck will exit the system and travel back to the start of the system, i.e., the loader queue.
 
 ## Simulation Model
 
