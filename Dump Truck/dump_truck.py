@@ -233,7 +233,7 @@ def simulate(num_trucks, num_loader, num_scaler):
 
 def main():
     print("===== Dump Truck Simulation =====")
-    simulate(num_trucks=6, num_loader=2, num_scaler=2)
+    simulate(num_trucks=6, num_loader=2, num_scaler=1)
     print()
 
     print(dedent("""
